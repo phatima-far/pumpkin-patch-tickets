@@ -1,0 +1,45 @@
+/* Pumpkin Patch Tickets - Project 1 */
+* { margin: 0; padding: 0; box-sizing: border-box; }
+body { font-family: Arial, sans-serif; color: #342d27; background: #f7f4ed; line-height: 1.5; }
+a { color: #65503a; }
+.site-header, .site-footer { display: flex; justify-content: space-between; align-items: center; padding: 20px 5%; gap: 20px; background: #e9e1d4; }
+.brand { font-size: 23px; font-weight: bold; text-decoration: none; color: #342d27; }
+.site-header nav a { margin-left: 18px; text-decoration: none; }
+.site-header nav a:hover { text-decoration: underline; }
+main { width: 90%; max-width: 1200px; margin: 30px auto; }
+h1 { font-size: 36px; margin-bottom: 15px; }
+h2 { font-size: 25px; margin-bottom: 14px; }
+h3 { font-size: 19px; margin-bottom: 10px; }
+p { margin-bottom: 14px; }
+.small-label { font-weight: bold; color: #6a5945; }
+.hero-grid, .content-grid { display: grid; grid-template-columns: 1fr; gap: 20px; }
+.hero-main, .hero-side, .card, .detail-article, .meta-panel { background: white; border: 1px solid #ded6c9; padding: 25px; }
+.hero-main { background: #e9dbc7; padding: 40px 30px; }
+.hero-side, .meta-panel { background: #f1ece2; }
+.hero-side ul, .meta-panel ul { padding-left: 20px; margin-bottom: 15px; }
+.button { display: inline-block; color: white; background: #70583d; padding: 10px 17px; text-decoration: none; margin-top: 10px; }
+.button:hover { background: #533f2b; }
+.section-title { margin-top: 35px; }
+.cards-gallery { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 20px; }
+.card { display: flex; flex-direction: column; }
+.card .button { margin-top: auto; align-self: flex-start; }
+.card-picture { height: 155px; margin-bottom: 18px; display: flex; justify-content: center; align-items: center; font-size: 21px; font-weight: bold; }
+.picture-one { background: #e8cbaa; }
+.picture-two { background: #d9d2bf; }
+.picture-three { background: #dbc8b7; }
+.detail-hero { margin-bottom: 25px; }
+.detail-article h2 { margin-top: 22px; }
+.ticket-option { padding: 15px; border: 1px solid #ded6c9; margin-bottom: 12px; }
+.project-image { background: #dac5a9; padding: 45px 15px; text-align: center; margin: 15px 0; }
+.site-footer { margin-top: 40px; font-size: 14px; }
+.site-footer p { margin-bottom: 0; }
+@media (min-width: 768px) {
+  .hero-grid { grid-template-columns: 2fr 1fr; }
+  .content-grid { grid-template-columns: 3fr 1fr; }
+}
+@media (max-width: 767px) {
+  .site-header, .site-footer { flex-direction: column; text-align: center; }
+  .site-header nav a { margin: 0 7px; }
+  h1 { font-size: 29px; }
+  .cards-gallery { grid-template-columns: 1fr; }
+}
